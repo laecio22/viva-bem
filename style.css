@@ -7,43 +7,95 @@
 }
 
 header {
-  height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  border: 1px solid #567;
+  height: 90vh;
+  flex-direction: column;
   background-image: url("./img/bannerHeader.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 header .box-header {
-  width: 80%;
   display: flex;
   align-items: center;
+  width: 80%;
   justify-content: space-around;
   margin-top: 30px;
   height: 10vh;
-  background: linear-gradient(to right, #4247A2 0%, #52B095 100%);
+  background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
   border-radius: 50px;
-  border: 1px solid #544;
 }
 header .box-header nav {
-  width: 40%;
-  height: 10vh;
   display: flex;
   align-items: center;
+  width: 40%;
+  height: 10vh;
   justify-content: space-evenly;
 }
 header .box-header a {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 header .box-banner {
+  display: flex;
+  align-items: center;
   width: 80vw;
   height: 80vh;
+}
+header .box-banner .box-titulo {
+  height: 60vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+header .box-banner .box-titulo h2 {
+  width: 90%;
+  background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+header .box-banner .box-titulo p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #04031c;
+  width: 60%;
+}
+header .box-banner .box-container-buttons {
+  display: flex;
+  gap: 2rem;
+}
+header .box-banner .box-container-buttons button {
+  height: 7vh;
+  padding: 0.6rem 2rem;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header .box-banner .box-container-buttons .button-azul {
+  background-color: #1173d4;
+  color: #fff;
+}
+header .box-banner .box-container-buttons .button-azul:hover {
+  background-color: #2769a3;
+}
+header .box-banner .box-container-buttons .button-branco {
+  background-color: #f8f9fa;
+  color: #1173d4;
+  border: 1px solid #1173d4;
+}
+header .box-banner .box-container-buttons .button-branco:hover {
+  color: #4247a2;
+  border: 1px solid #4247a2;
 }/*# sourceMappingURL=style.css.map */
