@@ -98,4 +98,34 @@ header .box-banner .box-container-buttons .button-branco {
 header .box-banner .box-container-buttons .button-branco:hover {
   color: #4247a2;
   border: 1px solid #4247a2;
+}
+
+@media (max-width: 1200px) {
+  header .box-header nav {
+    width: 60%;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  header .box-header {
+    width: 95%;
+  }
+  header .box-header a {
+    font-size: 1rem;
+  }
+  header .box-header img {
+    width: 30%;
+    height: 45px;
+  }
+}
+@media (min-width: 201px) and (max-width: 500px) {
+  header .box-header {
+    width: 95%;
+  }
+  header .box-header a {
+    font-size: 0.8rem;
+  }
+  header .box-header img {
+    width: 25%;
+    height: 45px;
+  }
 }/*# sourceMappingURL=style.css.map */
