@@ -12,6 +12,11 @@ $font-secundaria: "Roboto", sans-serif;
   font-weight: $font-weight;
 }
 
+@mixin definirCorTextBackground ($text-color, $background-color){
+   color: $text-color;
+   background-color: $background-color;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -104,8 +109,7 @@ header {
       }
 
       .button-azul {
-        background-color: colors.$blue-primary;
-        color: colors.$color-white;
+        @include definirCorTextBackground(colors.$color-white, colors.$blue-primary);    
 
         &:hover {
           background-color: colors.$blue-medium;
@@ -113,8 +117,7 @@ header {
       }
 
       .button-branco {
-        background-color: colors.$white-secondary;
-        color: colors.$blue-primary;
+        @include definirCorTextBackground(colors.$blue-primary, colors.$white-secondary);     
         border: 1px solid colors.$blue-primary;
 
         &:hover {
@@ -128,11 +131,29 @@ header {
 
 @media (max-width: 1200px) {
   header {
+    background-position: center;
     .box-header {
       nav {
         width: 60%;
       }
     }
+  }
+}
+
+@media (max-width:1000px) {
+  header {
+    background: colors.$color-white;
+    height: 100vh;
+    .box-banner {
+      width: 100vw;
+      justify-content: center;
+      text-align: center;
+
+      .box-titulo {
+        align-items: center;
+      }
+    }
+
   }
 }
 
@@ -154,6 +175,7 @@ header {
 
 @media (min-width: 201px) and (max-width: 500px) {
   header {
+    height: 80vh;
     .box-header {
       width: 95%;
       a {
@@ -163,6 +185,26 @@ header {
       img {
         width: 25%;       
         height: 45px;
+      }
+    }
+
+    .box-banner {
+      .box-titulo {
+        h2 {
+          font-size: 2.3rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+          width: 80%;
+        }
+      }
+
+      .box-container-buttons {
+        button{
+          font-size: 0.9rem;
+          padding: 0.6rem 1.2rem;         
+        }
       }
     }
   }
