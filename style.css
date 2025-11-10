@@ -52,7 +52,7 @@ header .box-banner .box-titulo {
 }
 header .box-banner .box-titulo h2 {
   width: 90%;
-  background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+  background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -98,6 +98,57 @@ header .box-banner .box-container-buttons .button-branco {
 header .box-banner .box-container-buttons .button-branco:hover {
   color: #4247a2;
   border: 1px solid #4247a2;
+}
+
+.box-importancia {
+  color: #04031c;
+  background-color: #f8f9fa;
+  height: 70vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+.box-importancia h2 {
+  width: 90%;
+  background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+.box-importancia p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 75%;
+  text-align: center;
+}
+.box-importancia .container-vantagens {
+  display: flex;
+  justify-content: space-between;
+}
+.box-importancia .container-vantagens article {
+  width: 30%;
+  height: 40vh;
+  background-color: aqua;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box-importancia .container-vantagens img {
+  width: 15%;
+}
+.box-importancia .container-vantagens h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.box-importancia .container-vantagens p {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1200px) {

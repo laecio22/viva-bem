@@ -12,9 +12,23 @@ $font-secundaria: "Roboto", sans-serif;
   font-weight: $font-weight;
 }
 
-@mixin definirCorTextBackground ($text-color, $background-color){
-   color: $text-color;
-   background-color: $background-color;
+@mixin definirCorTextBackground($text-color, $background-color) {
+  color: $text-color;
+  background-color: $background-color;
+}
+
+@mixin estilizarGradienteSubtitulo() {
+  width: 90%;
+  background: linear-gradient(
+    to right,
+    colors.$blue-primary 0%,
+    colors.$green-primary 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  @include definirTamanhoForcaFonte(2.7rem, bold);
 }
 
 * {
@@ -72,17 +86,7 @@ header {
       justify-content: space-evenly;
 
       h2 {
-        width: 90%;
-        background: linear-gradient(
-          to right,
-          colors.$blue-dark 0%,
-          colors.$green-dark 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        @include definirTamanhoForcaFonte(2.7rem, bold);
+        @include estilizarGradienteSubtitulo();
       }
 
       p {
@@ -109,7 +113,10 @@ header {
       }
 
       .button-azul {
-        @include definirCorTextBackground(colors.$color-white, colors.$blue-primary);    
+        @include definirCorTextBackground(
+          colors.$color-white,
+          colors.$blue-primary
+        );
 
         &:hover {
           background-color: colors.$blue-medium;
@@ -117,7 +124,10 @@ header {
       }
 
       .button-branco {
-        @include definirCorTextBackground(colors.$blue-primary, colors.$white-secondary);     
+        @include definirCorTextBackground(
+          colors.$blue-primary,
+          colors.$white-secondary
+        );
         border: 1px solid colors.$blue-primary;
 
         &:hover {
@@ -125,6 +135,56 @@ header {
           border: 1px solid colors.$blue-dark;
         }
       }
+    }
+  }
+}
+
+.box-importancia {
+  @include definirCorTextBackground(
+    colors.$color-black,
+    colors.$white-secondary
+  );
+  height: 70vh;
+  flex-direction: column;
+  @include centralizarContainerFlexível();
+  justify-content: space-evenly;
+  border: 1px solid red;
+
+  h2 {
+    @include estilizarGradienteSubtitulo();
+    text-align: center;
+  }
+
+  p {
+    @include definirTamanhoForcaFonte(1.3rem, 400);
+    width: 75%;
+    text-align: center;
+  }
+
+  .container-vantagens {
+    display: flex;
+    justify-content: space-between;
+
+    article {
+      width: 30%;
+      height: 40vh;
+      background-color: aqua;
+      flex-direction: column;    
+      @include centralizarContainerFlexível();
+      justify-content: space-evenly;
+    
+    }
+
+    img {
+      width: 15%;
+    }
+
+    h3 {
+      @include definirTamanhoForcaFonte(1.3rem, 600);
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 }
@@ -140,7 +200,7 @@ header {
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   header {
     background: colors.$color-white;
     height: 100vh;
@@ -153,7 +213,6 @@ header {
         align-items: center;
       }
     }
-
   }
 }
 
@@ -183,7 +242,7 @@ header {
       }
 
       img {
-        width: 25%;       
+        width: 25%;
         height: 45px;
       }
     }
@@ -201,9 +260,9 @@ header {
       }
 
       .box-container-buttons {
-        button{
+        button {
           font-size: 0.9rem;
-          padding: 0.6rem 1.2rem;         
+          padding: 0.6rem 1.2rem;
         }
       }
     }
