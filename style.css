@@ -218,6 +218,9 @@ header .box-banner .box-container-buttons .button-branco:hover {
     width: 25%;
     height: 45px;
   }
+  header .box-banner {
+    width: 90vw;
+  }
   header .box-banner .box-titulo h2 {
     font-size: 2.3rem;
   }
@@ -233,7 +236,7 @@ header .box-banner .box-container-buttons .button-branco:hover {
     height: 190vh;
   }
   .box-importancia h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     width: 100%;
   }
   .box-importancia p {

@@ -36,7 +36,7 @@ $font-secundaria: "Roboto", sans-serif;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: $font-principal;  
+  font-family: $font-principal;     
 }
 
 header {
@@ -269,6 +269,7 @@ header {
     }
 
     .box-banner {
+      width: 90vw;
       .box-titulo {
         h2 {
           font-size: 2.3rem;
@@ -290,10 +291,10 @@ header {
   }
 
   .box-importancia {
-    height: 190vh;
+    height: 190vh;   
 
     h2 {
-      font-size: 2.3rem;
+      font-size: 2rem;
       width: 100%;
     }
 
@@ -302,5 +303,11 @@ header {
       font-size: 1.2rem;
       padding: 0 1rem;
     }
+
+    // .container-vantagens {
+    //   article {
+    //     width: 60%;
+    //   }
+    // }
   }
 }
