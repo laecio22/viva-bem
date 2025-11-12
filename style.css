@@ -152,6 +152,78 @@ header .box-banner .box-container-buttons .button-branco:hover {
   font-size: 1.2rem;
 }
 
+.prevencao-feminina {
+  background-color: #fdefef;
+}
+
+.prevencao-masculina {
+  background-color: #f8f9fa;
+}
+
+.prevencao-feminina,
+.prevencao-masculina {
+  height: 160vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.prevencao-feminina .container-cards,
+.prevencao-masculina .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  gap: 3rem;
+}
+.prevencao-feminina .container-cards article,
+.prevencao-masculina .container-cards article {
+  width: 250px;
+  height: 50vh;
+  background-color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 2px 0 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.prevencao-feminina .container-cards img,
+.prevencao-masculina .container-cards img {
+  margin-top: 20px;
+  height: 100px;
+  width: 35%;
+}
+.prevencao-feminina .container-cards h3,
+.prevencao-masculina .container-cards h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.prevencao-feminina .container-cards ul,
+.prevencao-masculina .container-cards ul {
+  width: 80%;
+}
+.prevencao-feminina .container-cards ul li,
+.prevencao-masculina .container-cards ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 1800px) {
+  .prevencao-feminina .container-cards article,
+  .prevencao-masculina .container-cards article {
+    height: 60vh;
+  }
+}
+@media (max-width: 1500px) {
+  .prevencao-feminina .container-cards article,
+  .prevencao-masculina .container-cards article {
+    height: 50vh;
+  }
+}
 @media (max-width: 1200px) {
   header {
     background-position: center;
