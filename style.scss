@@ -273,6 +273,46 @@ header {
   }
 }
 
+.box-alertas {
+  height: 90vh;
+  border: 1px solid purple; 
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  @include centralizarContainerFlexível();
+
+  h2 {
+    @include estilizarGradienteSubtitulo();
+    text-align: center;    
+  }
+
+  .container-alertas {
+    height: 70vh;
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    article {
+      width: 45%;
+      flex-direction: column;
+      display: flex; 
+      justify-content: flex-start;          
+      border: 1px solid red;
+      height: 30vh;
+      gap: 2rem;
+      padding: 1rem;
+
+      .caixa-flexivel {
+        @include centralizarContainerFlexível();       
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1800px) {  
   .prevencao-feminina,
   .prevencao-masculina {

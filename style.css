@@ -231,6 +231,51 @@ header .box-banner .box-container-buttons .button-branco:hover {
   font-weight: 400;
 }
 
+.box-alertas {
+  height: 90vh;
+  border: 1px solid purple;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.box-alertas h2 {
+  width: 90%;
+  background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+.box-alertas .container-alertas {
+  height: 70vh;
+  display: flex;
+  border: 1px solid yellow;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.box-alertas .container-alertas article {
+  width: 45%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid red;
+  height: 30vh;
+  gap: 2rem;
+  padding: 1rem;
+}
+.box-alertas .container-alertas article .caixa-flexivel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media (max-width: 1800px) {
   .prevencao-feminina,
   .prevencao-masculina {
