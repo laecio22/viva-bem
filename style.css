@@ -155,18 +155,37 @@ header .box-banner .box-container-buttons .button-branco:hover {
 .prevencao-feminina {
   background-color: #fdefef;
 }
+.prevencao-feminina h2 {
+  background: linear-gradient(to right, #f9016f 54%, #930885 61.96%, #d038aa 75.48%, #851c87 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .prevencao-masculina {
   background-color: #f8f9fa;
+}
+.prevencao-masculina h2 {
+  background: linear-gradient(to right, #3373D2, #6F95C7, #7BB5F5, #0074EE, #5EA7EF);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .prevencao-feminina,
 .prevencao-masculina {
   height: 160vh;
   flex-direction: column;
+  justify-content: space-evenly;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+}
+.prevencao-feminina h2,
+.prevencao-masculina h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
 }
 .prevencao-feminina .container-cards,
 .prevencao-masculina .container-cards {
@@ -197,8 +216,8 @@ header .box-banner .box-container-buttons .button-branco:hover {
 .prevencao-feminina .container-cards h3,
 .prevencao-masculina .container-cards h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 .prevencao-feminina .container-cards ul,
 .prevencao-masculina .container-cards ul {
@@ -207,9 +226,9 @@ header .box-banner .box-container-buttons .button-branco:hover {
 .prevencao-feminina .container-cards ul li,
 .prevencao-masculina .container-cards ul li {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
   margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 @media (max-width: 1800px) {

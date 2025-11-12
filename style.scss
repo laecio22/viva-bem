@@ -190,18 +190,48 @@ header {
 }
 .prevencao-feminina {
   background-color: colors.$pink-light;
+  h2 {
+    background: linear-gradient(
+      to right,
+      #f9016f 54%,
+      #930885 61.96%,
+      #d038aa 75.48%,
+      #851c87 100%
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 .prevencao-masculina {
   background-color: colors.$white-secondary;
+  h2 {
+    background: linear-gradient(
+      to right,
+      #3373D2,
+      #6F95C7,
+      #7BB5F5,
+      #0074EE,
+      #5EA7EF,
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 .prevencao-feminina,
 .prevencao-masculina {
   height: 160vh;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+  flex-direction: column;  
   justify-content: space-evenly;
+  @include centralizarContainerFlexível();
+
+  h2 {
+    @include definirTamanhoForcaFonte(2.7rem, bold); 
+  }
 
   .container-cards {
     display: flex;
@@ -216,7 +246,7 @@ header {
       background-color: colors.$color-white;
       flex-direction: column;
       @include centralizarContainerFlexível();
-      gap: 0.5rem;     
+      gap: 0.5rem;
       box-shadow: 2px 0 10px 5px rgba(0, 0, 0, 0.2);
       border-radius: 8px;
     }
@@ -229,44 +259,40 @@ header {
 
     h3 {
       font-family: $font-secundaria;
-      font-weight: bold;
-      font-size: 1.3rem;
+      @include definirTamanhoForcaFonte(1.3rem, bold);     
     }
 
     ul {
       width: 80%;
       li {
-        font-family: $font-secundaria;
-        font-weight: 400;
-        font-size: 0.9rem;
+        font-family: $font-secundaria;       
         margin-top: 10px;
+        @include definirTamanhoForcaFonte(0.9rem, 400);
       }
     }
   }
 }
 
-@media (max-width:1800px){
+@media (max-width: 1800px) {
   .prevencao-feminina,
-.prevencao-masculina {
-  .container-cards {
-    article {
-      height: 60vh;
-    
+  .prevencao-masculina {
+    .container-cards {
+      article {
+        height: 60vh;
+      }
     }
   }
-} 
 }
 
-@media (max-width:1500px){
+@media (max-width: 1500px) {
   .prevencao-feminina,
-.prevencao-masculina {
-  .container-cards {
-    article {
-      height: 50vh;
-    
+  .prevencao-masculina {
+    .container-cards {
+      article {
+        height: 50vh;
+      }
     }
   }
-} 
 }
 
 @media (max-width: 1200px) {
