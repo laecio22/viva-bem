@@ -167,7 +167,7 @@ header .box-banner .box-container-buttons .button-branco:hover {
   background-color: #f8f9fa;
 }
 .prevencao-masculina h2 {
-  background: linear-gradient(to right, #3373D2, #6F95C7, #7BB5F5, #0074EE, #5EA7EF);
+  background: linear-gradient(to right, #3373d2, #6f95c7, #7bb5f5, #0074ee, #5ea7ef);
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -233,7 +233,6 @@ header .box-banner .box-container-buttons .button-branco:hover {
 
 .box-alertas {
   height: 90vh;
-  border: 1px solid purple;
   flex-direction: column;
   justify-content: center;
   gap: 1.4rem;
@@ -254,14 +253,14 @@ header .box-banner .box-container-buttons .button-branco:hover {
 .box-alertas .container-alertas {
   height: 70vh;
   display: flex;
-  border: 1px solid yellow;
   justify-content: space-between;
   width: 80%;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 20px;
 }
-.box-alertas .container-alertas h3, .box-alertas .container-alertas p {
+.box-alertas .container-alertas h3,
+.box-alertas .container-alertas p {
   font-family: "Roboto", sans-serif;
 }
 .box-alertas .container-alertas h3 {
@@ -348,6 +347,20 @@ header .box-banner .box-container-buttons .button-branco:hover {
   header .box-header nav {
     width: 60%;
   }
+  .box-alertas {
+    height: 160vh;
+    justify-content: flex-start;
+  }
+  .box-alertas h2 {
+    margin-top: 40px;
+  }
+  .box-alertas .container-alertas {
+    justify-content: center;
+    height: auto;
+  }
+  .box-alertas .container-alertas article {
+    width: 60%;
+  }
 }
 @media (max-width: 1000px) {
   header {
@@ -400,6 +413,9 @@ header .box-banner .box-container-buttons .button-branco:hover {
   .box-importancia p {
     font-size: 1.2rem;
   }
+  .box-alertas .container-alertas article {
+    width: 80%;
+  }
 }
 @media (min-width: 201px) and (max-width: 500px) {
   header {
@@ -441,7 +457,20 @@ header .box-banner .box-container-buttons .button-branco:hover {
     font-size: 1.2rem;
     padding: 0 1rem;
   }
-  .prevencao-feminina h2, .prevencao-masculina h2 {
+  .prevencao-feminina h2,
+  .prevencao-masculina h2 {
     font-size: 2rem;
+  }
+  .box-alertas h2 {
+    font-size: 2rem;
+  }
+  .box-alertas .container-alertas h3 {
+    font-size: 1.2rem;
+  }
+  .box-alertas .container-alertas p {
+    font-size: 0.9rem;
+  }
+  .box-alertas .container-alertas article {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

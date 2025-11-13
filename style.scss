@@ -189,7 +189,7 @@ header {
   }
 }
 .prevencao-feminina {
-  background-color: colors.$pink-light;  
+  background-color: colors.$pink-light;
   h2 {
     background: linear-gradient(
       to right,
@@ -205,15 +205,15 @@ header {
   }
 }
 .prevencao-masculina {
-  background-color: colors.$white-secondary;    
+  background-color: colors.$white-secondary;
   h2 {
     background: linear-gradient(
       to right,
-      #3373D2,
-      #6F95C7,
-      #7BB5F5,
-      #0074EE,
-      #5EA7EF,
+      #3373d2,
+      #6f95c7,
+      #7bb5f5,
+      #0074ee,
+      #5ea7ef
     );
     color: transparent;
     -webkit-background-clip: text;
@@ -225,12 +225,12 @@ header {
 .prevencao-feminina,
 .prevencao-masculina {
   height: 140vh;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-evenly;
   @include centralizarContainerFlexível();
 
   h2 {
-    @include definirTamanhoForcaFonte(2.7rem, bold); 
+    @include definirTamanhoForcaFonte(2.7rem, bold);
   }
 
   .container-cards {
@@ -259,13 +259,13 @@ header {
 
     h3 {
       font-family: $font-secundaria;
-      @include definirTamanhoForcaFonte(1.3rem, bold);     
+      @include definirTamanhoForcaFonte(1.3rem, bold);
     }
 
     ul {
       width: 80%;
       li {
-        font-family: $font-secundaria;       
+        font-family: $font-secundaria;
         margin-top: 10px;
         @include definirTamanhoForcaFonte(0.9rem, 400);
       }
@@ -274,8 +274,7 @@ header {
 }
 
 .box-alertas {
-  height: 90vh;
-  border: 1px solid purple; 
+  height: 90vh; 
   flex-direction: column;
   justify-content: center;
   gap: 1.4rem;
@@ -283,35 +282,35 @@ header {
 
   h2 {
     @include estilizarGradienteSubtitulo();
-    text-align: center;    
+    text-align: center;
   }
 
   .container-alertas {
     height: 70vh;
-    display: flex;
-    border: 1px solid yellow;
+    display: flex;  
     justify-content: space-between;
     width: 80%;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 20px;   
+    margin-top: 20px;
 
-    h3, p{
-       font-family: $font-secundaria;
+    h3,
+    p {
+      font-family: $font-secundaria;
     }
 
-    h3{
+    h3 {
       @include definirTamanhoForcaFonte(1.3rem, bold);
     }
 
-    p{
+    p {
       @include definirTamanhoForcaFonte(1rem, 400);
     }
 
     article {
       width: 45%;
       flex-direction: column;
-      display: flex; 
+      display: flex;
       justify-content: flex-start;
       height: 30vh;
       gap: 2rem;
@@ -320,7 +319,7 @@ header {
       border-radius: 10px;
 
       .caixa-flexivel {
-        @include centralizarContainerFlexível();       
+        @include centralizarContainerFlexível();
         gap: 0.5rem;
       }
     }
@@ -329,21 +328,30 @@ header {
       @include definirCorTextBackground(colors.$pink-dark, colors.$pink);
     }
 
-    .card-exame-testiculo{
-      @include definirCorTextBackground(colors.$blue-medium, colors.$blue-secondary);
+    .card-exame-testiculo {
+      @include definirCorTextBackground(
+        colors.$blue-medium,
+        colors.$blue-secondary
+      );
     }
 
     .card-vacina {
-      @include definirCorTextBackground(colors.$green-medium, colors.$green-secondary);
+      @include definirCorTextBackground(
+        colors.$green-medium,
+        colors.$green-secondary
+      );
     }
 
-    .card-mental{
-      @include definirCorTextBackground(colors.$yellow-dark, colors.$yellow-light);
+    .card-mental {
+      @include definirCorTextBackground(
+        colors.$yellow-dark,
+        colors.$yellow-light
+      );
     }
   }
 }
 
-@media (max-width: 1800px) {  
+@media (max-width: 1800px) {
   .prevencao-feminina,
   .prevencao-masculina {
     height: 160vh;
@@ -367,8 +375,8 @@ header {
   }
 }
 
-@media (max-width:1209px){
-   .prevencao-feminina,
+@media (max-width: 1209px) {
+  .prevencao-feminina,
   .prevencao-masculina {
     height: 210vh;
     .container-cards {
@@ -390,7 +398,22 @@ header {
         width: 60%;
       }
     }
-  } 
+  }
+
+  .box-alertas {
+     height: 160vh;
+     justify-content: flex-start;
+     h2{
+      margin-top: 40px;
+     }
+    .container-alertas {
+      justify-content: center;
+      height: auto;
+      article {
+        width: 60%;
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -423,11 +446,9 @@ header {
   }
 }
 
-@media (max-width:701px){
-  
-   .prevencao-feminina
-   {
-      height: 380vh;   
+@media (max-width: 701px) {
+  .prevencao-feminina {
+    height: 380vh;
   }
   .prevencao-masculina {
     height: 320vh;
@@ -453,6 +474,15 @@ header {
     height: 170vh;
     p {
       font-size: 1.2rem;
+    }
+  }
+
+  .box-alertas {
+
+    .container-alertas {
+      article {
+        width: 80%;
+      }
     }
   }
 }
@@ -515,9 +545,27 @@ header {
     // }
   }
 
-  .prevencao-feminina, .prevencao-masculina {
+  .prevencao-feminina,
+  .prevencao-masculina {
     h2 {
       font-size: 2rem;
+    }
+  }
+
+  .box-alertas {
+    h2 {
+      font-size: 2rem;
+    }
+    .container-alertas {
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+      article{
+        width: 100%;
+      }
     }
   }
 }
