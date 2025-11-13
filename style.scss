@@ -1,5 +1,6 @@
 $font-principal: "Inter", sans-serif;
 $font-secundaria: "Roboto", sans-serif;
+$font-terciaria: "Poppins", sans-serif;
 @use "src/colors";
 
 @mixin centralizarContainerFlexível {
@@ -274,7 +275,7 @@ header {
 }
 
 .box-alertas {
-  height: 90vh; 
+  height: 90vh;
   flex-direction: column;
   justify-content: center;
   gap: 1.4rem;
@@ -287,7 +288,7 @@ header {
 
   .container-alertas {
     height: 70vh;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     width: 80%;
     flex-wrap: wrap;
@@ -351,6 +352,50 @@ header {
   }
 }
 
+footer {
+  @include definirCorTextBackground(colors.$color-white, colors.$purple);
+  height: 70vh;
+
+  h3,p {
+     font-family: $font-terciaria;
+  }
+
+  h3 {
+    @include definirTamanhoForcaFonte(1.2rem, bold);
+  }
+
+  p{
+    @include definirTamanhoForcaFonte(1rem, 400);
+  }
+
+  .content-footer {
+    height: 50vh;
+    justify-content: space-around;
+    @include centralizarContainerFlexível();
+
+    article {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      gap: 30px;     
+    }
+
+    img {
+      width: 50%;
+      min-width: 170px;
+    }
+  }
+
+  .content-copyright {
+    @include centralizarContainerFlexível();
+    height: 20vh;   
+    justify-content: center;
+    border-top: 1px solid colors.$gray;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1800px) {
   .prevencao-feminina,
   .prevencao-masculina {
@@ -401,11 +446,11 @@ header {
   }
 
   .box-alertas {
-     height: 160vh;
-     justify-content: flex-start;
-     h2{
+    height: 160vh;
+    justify-content: flex-start;
+    h2 {
       margin-top: 40px;
-     }
+    }
     .container-alertas {
       justify-content: center;
       height: auto;
@@ -414,6 +459,17 @@ header {
       }
     }
   }
+
+   footer {
+    height: 90vh;
+     .content-footer {
+      height: 70vh;
+      article {
+        width: 25%;
+        gap: 20px;
+      }   
+     }
+   }
 }
 
 @media (max-width: 1000px) {
@@ -453,6 +509,18 @@ header {
   .prevencao-masculina {
     height: 320vh;
   }
+
+  footer {
+    height: 160vh;
+    .content-footer {
+      flex-direction: column;
+      height: 140vh;
+      article {       
+        height: 35vh;
+        width: 50%;        
+      }
+    }
+  }
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
@@ -478,7 +546,6 @@ header {
   }
 
   .box-alertas {
-
     .container-alertas {
       article {
         width: 80%;
@@ -557,14 +624,29 @@ header {
       font-size: 2rem;
     }
     .container-alertas {
-      h3{
+      h3 {
         font-size: 1.2rem;
       }
-      p{
+      p {
         font-size: 0.9rem;
       }
-      article{
+      article {
         width: 100%;
+      }
+    }
+  }
+
+  footer {
+    height: 140vh;
+    p {
+      font-size: 0.9rem;
+    }
+    .content-footer{
+      height: 120vh;
+      justify-content: center;
+
+      article {
+        width: 70%;
       }
     }
   }
