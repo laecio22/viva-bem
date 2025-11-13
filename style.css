@@ -259,21 +259,50 @@ header .box-banner .box-container-buttons .button-branco:hover {
   width: 80%;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 20px;
+}
+.box-alertas .container-alertas h3, .box-alertas .container-alertas p {
+  font-family: "Roboto", sans-serif;
+}
+.box-alertas .container-alertas h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.box-alertas .container-alertas p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 .box-alertas .container-alertas article {
   width: 45%;
   flex-direction: column;
   display: flex;
   justify-content: flex-start;
-  border: 1px solid red;
   height: 30vh;
   gap: 2rem;
   padding: 1rem;
+  border: none;
+  border-radius: 10px;
 }
 .box-alertas .container-alertas article .caixa-flexivel {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+.box-alertas .container-alertas .card-exame-mama {
+  color: #ad346a;
+  background-color: #f9d5e5;
+}
+.box-alertas .container-alertas .card-exame-testiculo {
+  color: #2769a3;
+  background-color: #cfe2f3;
+}
+.box-alertas .container-alertas .card-vacina {
+  color: #244a2d;
+  background-color: #d4edda;
+}
+.box-alertas .container-alertas .card-mental {
+  color: #976c00;
+  background-color: #ffe9c2;
 }
 
 @media (max-width: 1800px) {

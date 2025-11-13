@@ -294,21 +294,51 @@ header {
     width: 80%;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 20px;   
+
+    h3, p{
+       font-family: $font-secundaria;
+    }
+
+    h3{
+      @include definirTamanhoForcaFonte(1.3rem, bold);
+    }
+
+    p{
+      @include definirTamanhoForcaFonte(1rem, 400);
+    }
 
     article {
       width: 45%;
       flex-direction: column;
       display: flex; 
-      justify-content: flex-start;          
-      border: 1px solid red;
+      justify-content: flex-start;
       height: 30vh;
       gap: 2rem;
       padding: 1rem;
+      border: none;
+      border-radius: 10px;
 
       .caixa-flexivel {
         @include centralizarContainerFlexível();       
         gap: 0.5rem;
       }
+    }
+
+    .card-exame-mama {
+      @include definirCorTextBackground(colors.$pink-dark, colors.$pink);
+    }
+
+    .card-exame-testiculo{
+      @include definirCorTextBackground(colors.$blue-medium, colors.$blue-secondary);
+    }
+
+    .card-vacina {
+      @include definirCorTextBackground(colors.$green-medium, colors.$green-secondary);
+    }
+
+    .card-mental{
+      @include definirCorTextBackground(colors.$yellow-dark, colors.$yellow-light);
     }
   }
 }
