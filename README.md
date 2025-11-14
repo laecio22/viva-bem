@@ -1,4 +1,4 @@
-# Projeto Viva Bem 🩺
+# Projeto Viva Bem 
 
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-green)
 
@@ -16,10 +16,11 @@ Você pode ver o site completo em funcionamento no Vercel:
 
 ## 📸 Screenshots
 
-| Desktop | Celular |
-| :---:  :---: |
-| <img src="./screenshots/viva-bem-desktop.png" width="400"> | <img src="./screenshots/viva-bem-mobile.png" width="200"> |
+ ### Desktop
+ <img src="./screenshots/viva-bem-desktop.png" width="400"> 
 
+ ### Mobile
+ <img src="./screenshots/viva-bem-mobile.png" width="200"> 
 ---
 
 ## 📝 Sobre o Projeto
