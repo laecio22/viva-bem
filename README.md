@@ -21,6 +21,7 @@ Você pode ver o site completo em funcionamento no Vercel:
 
  ### Mobile
  <img src="./screenshots/viva-bem-mobile.png" width="200"> 
+ 
 ---
 
 ## 📝 Sobre o Projeto
